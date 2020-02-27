@@ -19,9 +19,8 @@ function trianglePascale(num){
         let previous = triangle[triangle.length - 1]
         let newRow = [1]
         for(let i = 0; i < previous.length - 1; i++){
-            let current = previous[i]
-            let next = previous[i+1] 
-            newRow.push(current + next)
+           
+            newRow.push(previous[i] + previous[i+1])
         }
         newRow.push(1)
         return triangle.push(newRow)
